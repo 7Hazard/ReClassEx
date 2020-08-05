@@ -1317,7 +1317,7 @@ void CReClassExApp::OnButtonGenerate( )
             CNodeBase* pNode = (CNodeBase*)pClass->GetNode( n );
             NodeType Type = pNode->GetType( );
 
-            if ((Type == nt_hex64) || (Type == nt_hex32) || (Type == nt_hex16) || (Type == nt_hex8))
+            if ((Type == nt_hex64) || (Type == nt_hex32) || (Type == nt_hex16) || (Type == nt_hex8) || (Type == nt_bits))
             {
                 if (fill == 0)
                     fillStart = (int)pNode->GetOffset( );
